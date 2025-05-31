@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Search, Database, BarChart3, Settings } from 'lucide-react';
+import { Search, Database, BarChart3, Settings, Code } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -10,32 +10,32 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-blue-600">GeneScope</h1>
+              <h1 className="text-2xl font-bold text-blue-600">Gene Expression Explorer</h1>
             </div>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#search" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
               <Search className="inline-block w-4 h-4 mr-1" />
-              Search
+              Gene Query
             </a>
             <a href="#datasets" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
               <Database className="inline-block w-4 h-4 mr-1" />
-              Datasets
+              GEO Datasets
             </a>
             <a href="#analysis" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
               <BarChart3 className="inline-block w-4 h-4 mr-1" />
-              Analysis
+              Analysis Tools
             </a>
           </nav>
 
           <div className="flex items-center space-x-4">
             <Button variant="outline" size="sm">
-              <Settings className="w-4 h-4 mr-2" />
-              Settings
+              <Code className="w-4 h-4 mr-2" />
+              Python Integration
             </Button>
             <Button size="sm">
-              Get Started
+              Start Analysis
             </Button>
           </div>
         </div>
